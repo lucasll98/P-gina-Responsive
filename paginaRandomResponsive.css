@@ -1,0 +1,104 @@
+.navBarResponsive{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: beige;
+    z-index: 99;
+    
+        
+}
+
+
+.contenedorItemsNavR{
+    position: relative;
+    background: beige;
+    width: 60%;
+    height: 140px;
+    padding: 20px;
+    top: -1000px;
+    
+    
+    transition: all 0.6s;
+}
+
+ .contenedor{
+        padding: 16px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+}
+
+.subItemNavR{
+    padding: 20px;
+}
+
+
+    .navBarResponsive, .contenedorItemsNavR,.contenedor,.subItemNavR{
+
+        visibility: hidden;
+    }
+
+@media only screen and (max-width: 412px) {
+    .navBar{
+        display: none;
+    }
+
+    .navBarResponsive, .contenedorItemsNavR,.contenedor,.subItemNavR{
+
+        visibility: visible;
+    }
+    
+
+    .navBarResponsive:hover > .contenedorItemsNavR {
+        top: -10px;
+        
+    }
+    .itemNav{
+        margin-left: 12px;
+    }
+
+    .contenedorSubParrafos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    *{
+        font-size: 16px;
+    }
+
+    .textoFooter{
+        font-size: 12px;
+    }
+
+    .la-twitter:hover,.la-instagram:hover,.la-linkedin:hover{
+        font-size:10px;
+    
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .tituloForm{
+        font-size: 18px;
+
+    }
+
+    input{
+        padding: 10px;
+        margin: 6px;
+        height: 10px;
+        width: 220px;
+        
+    
+    }
+    
+    button{
+        padding: 8px;
+        
+    }
+    
+    }
